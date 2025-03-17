@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ramen Rater</title>
 </head>
 <body>
-    <script>src=index.js</script>
+    <style>
+ #ramen-menu {
+      padding: 20px;
+      background-color: #fff;
+      margin: 20px;
+      border-radius: 5px;
+      
+    }
+    #ramen details {
+        padding: 20px;
+      background-color: #f0f0f0;
+      margin: 20px;
+      border-radius: 5px;
+
+    }
+    #ramen-name h2 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+    #ramen-restaurant h3 {
+        margin: 0;
+      font-size: 20px;
+      color: blue;
+    }
+    #ramen-rating {
+      margin: 0;
+      font-size: 18px;
+      color: green;
+    }
+    #ramen-comment {
+        margin: 0;
+      font-size: 16px;
+      color: black;
+    }
+    form {
+      padding: 20px;
+      background-color: #fff;
+      margin: 20px;
+      border-radius: 5px;
+    }
+    </style>
+    <div id="ramen-menu">
+        
+        <div class="ramen-item">
+            <h2>Shoyu Ramen</h2>
+            <h3>Ichiran</h3>
+            <img src="shoyu-ramen.jpg" alt="Shoyu Ramen">
+            <p>Rating: 4.5</p>
+            <p>Comment: Delicious and savory!</p>
+        </div>
+        <div class="ramen-item">
+            <h2>Tonkotsu Ramen</h2>
+            <h3>Ippudo</h3>
+            <img src="tonkotsu-ramen.jpg" alt="Tonkotsu Ramen">
+            <p>Rating: 4.8</p>
+            <p>Comment: Rich and creamy broth!</p>
+        </div>
+    </div>
+    <div id="ramen-detail"></div>
+    <h2 id="ramen-name"></h2>
+    <h3 id="ramen-restaurant"></h3>
+    <img id="ramen-image" src="" alt="Ramen Image">
+    <p id="ramen-rating"></p>
+    <p id="ramen-comment"></p>
+  <form id="new-ramen">
+    <input type="text" id="new-name" placeholder="Name" required>
+    <input type="text" id="new-restaurant" placeholder="Restaurant" required>
+    <input type="text" id="new-image" placeholder="Image URL" required>
+    <input type="text" id="new-rating" placeholder="Rating" required>
+    <input type="text" id="new-comment" placeholder="Comment" required>
+   
+   
+    <button type="submit">Add Ramen</button>
+  </form>
+    
+    <script src="index.js"></script>
 </body>
 </html>
